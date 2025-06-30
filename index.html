@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Responsive Image Gallery with Filters</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="people">People</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/id/1016/300/200" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/id/1018/300/200" alt="Technology" class="gallery-item" data-category="technology">
+        <img src="https://picsum.photos/id/1020/300/200" alt="Technology" class="gallery-item" data-category="technology">
+        <img src="https://picsum.photos/id/1027/300/200" alt="People" class="gallery-item" data-category="people">
+    </div>
+
+    <!-- Lightbox View -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
